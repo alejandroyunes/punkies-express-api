@@ -2,25 +2,34 @@ require('dotenv').config()
 
 import express from "express";
 import mongoose from "mongoose";
+const cors = require('cors')
 
 import diaryRouter from './routes/diaries'
+import blogRouter from './routes/blogs'
+
 
 const app = express();
 app.use(express.json());
+app.use(cors())
 const port = process.env.PORT || 3001;
 
 
-app.get("/ping", (_, res) => {
+app.get("/ping", (req, res) => {
   console.log("someone pined");
-  res.send("pong poing");
+  res.send(req.body);
 });
 
 app.use('/api/diaries', diaryRouter)
+app.use('/blog', blogRouter)
+
 
 mongoose
   .connect(`${process.env.MONGO_DB}`)
   .then(() => console.log('conected to the database'))
   .catch((error) => console.log(error))
+
+
+
 
 app.listen(port, () => {
   console.log(`Server Running on port ${port}`);

@@ -29,4 +29,9 @@ export const getEntriesWithoutSentitiveInfo = (): NonSensitiveInfoDiaryEntry[] =
     })
 }
 
-export const addEntry = () => null
+
+export const findBlog = (): any => {
+    
+}
+
+export const addEntry = () => diaries

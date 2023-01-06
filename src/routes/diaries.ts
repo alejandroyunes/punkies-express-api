@@ -14,6 +14,7 @@ router.get('/:id', (req, res) => {
 })
 
 router.post("/post", (req, res) => {
+  console.log(req.body)
   const user = new userSchema(req.body)
   user.save()
     .then((data) => res.json(data))
