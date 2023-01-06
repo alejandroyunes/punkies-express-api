@@ -1,0 +1,26 @@
+node 18.12.1
+npm: 8.19.2
+
+npm init -y
+
+npm install typescript -D
+
+create script in package.js > "tsc": "tsc"
+
+npm run tsc -- --init  > for the init to rn with the tsc and not the npm
+change tsconfig as needed
+
+
+npm install express -E -D > E for exact version and -D for develop,ent
+
+
+install npm install @types/express -D
+
+
+
+
+npm install ts-node-dev -D
+// COPILES and listens to change in the server
+
+
+npm install ts-standard -D

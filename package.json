@@ -1,0 +1,35 @@
+{
+  "name": "express-typescript-punkies",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tsc": "tsc",
+    "lint": "ts-standard",
+    "start": "node build/index.js",
+    "dev": "ts-node-dev src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "4.18.2",
+    "mongoose": "6.8.2"
+  },
+  "devDependencies": {
+    "@types/express": "4.17.15",
+    "dotenv": "^16.0.3",
+    "ts-node-dev": "2.0.0",
+    "ts-standard": "^12.0.2",
+    "typescript": "4.9.4"
+  },
+  "eslintConfig": {
+    "parserOptions": {
+      "project": "./tsconfig.json"
+    },
+    "extends": [
+      "./node_modules/ts-standard/eslintrc.json"
+    ]
+  }
+}
