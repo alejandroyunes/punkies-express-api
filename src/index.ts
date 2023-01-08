@@ -8,6 +8,13 @@ import diaryRouter from './routes/diaries'
 import blogRouter from './routes/blogs'
 
 
+mongoose
+  .connect(`${process.env.MONGO_DB}`)
+  .then(() => console.log('connected to the server'))
+  .catch((error) => console.log(error))
+
+
+
 const app = express();
 app.use(express.json());
 app.use(cors())
@@ -27,8 +34,6 @@ mongoose
   .connect(`${process.env.MONGO_DB}`)
   .then(() => console.log('conected to the database'))
   .catch((error) => console.log(error))
-
-
 
 
 app.listen(port, () => {
