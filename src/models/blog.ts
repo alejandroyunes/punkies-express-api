@@ -21,7 +21,15 @@ const blogSchema = new Schema({
         type: String,
         required: true
     },
+    dateString: {
+        type: String,
+        required: true
+    },
     date: {
+        type: Date,
+        required: true
+    },
+    year: {
         type: String,
         required: true
     },
