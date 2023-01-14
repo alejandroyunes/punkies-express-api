@@ -30,6 +30,8 @@ app.use('/api/diaries', diaryRouter)
 app.use('/blog', blogRouter)
 
 
+mongoose.set("strictQuery", false);
+
 mongoose
   .connect(`${process.env.MONGO_DB}`)
   .then(() => console.log('conected to the database'))

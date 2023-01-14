@@ -23,6 +23,7 @@ app.get("/ping", (req, res) => {
 });
 app.use('/api/diaries', diaries_1.default);
 app.use('/blog', blogs_1.default);
+mongoose_1.default.set("strictQuery", false);
 mongoose_1.default
     .connect(`${process.env.MONGO_DB}`)
     .then(() => console.log('conected to the database'))
