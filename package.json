@@ -1,12 +1,12 @@
 {
   "name": "express-typescript-punkies",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
     "tsc": "tsc",
     "lint": "ts-standard",
-    "start": "node build/index.js",
+    "build": "node build/index.js",
     "dev": "ts-node-dev src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
