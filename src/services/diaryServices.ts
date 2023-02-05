@@ -4,6 +4,7 @@ import diaryData from './diaries.json'
 const diaries: DiaryEntry[] = diaryData as DiaryEntry[]
 
 export const getEntries = (): DiaryEntry[] => diaries
+
 export const findById = (id: number): NonSensitiveInfoDiaryEntry | undefined => {
     const entry = diaries.find(d => +d.id === id)
 

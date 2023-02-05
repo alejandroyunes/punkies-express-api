@@ -1,0 +1,74 @@
+[
+    {
+        "category": "Koanes todo el día",
+        "description": "Documentos públicos para que cualquiera pueda acceder a ellos."
+    },
+    {
+        "category": "In Sermus Rusticus",
+        "description": "Un ejercicio de escritura para decir lo que pienso... en palabras vulgares."
+    },
+    {
+        "category": "Pensum",
+        "description": "Seguimiento de las materias que me dieron en la universidad y la razón por la que por poco nunca me gradúo."
+    },
+    {
+        "category": "Evolucionismo Puro",
+        "description": "Seguro de que todo proviene de alguna parte ofrezco unas cuantas versiones personales."
+    },
+    {
+        "category": "Ideas Conceptuales",
+        "description": "Cosas que se me han ocurrido y que he fabricado porque a mi me enseñaron que si no existe algo se puede construir. Acá comparto esas ideas."
+    },
+    {
+        "category": "Koanes Matemáticos",
+        "description": "Historias o leyendas que incluyen la genialidad matemática de algunos personajes de la historia."
+    },
+    {
+        "category": "Alegatos Housianos",
+        "description": "De los capítulos de House. Monólogos."
+    },
+    {
+        "category": "Síndromes, Efectos y Teorías",
+        "description": "Un ejercicio de escritura tipo compilatorio, algún día espero volverlo un libro físico real."
+    },
+    {
+        "category": "Píldora con Veneno",
+        "description": "Básicamente son unas cuantas cosas que se me vienen a la cabeza sobre algún tema en particular."
+    },
+    {
+        "category": "Las Aventuras de Jacobo Pinares",
+        "description": "Las innolvidables aventuras de Jacobo Pinares"
+    },
+    {
+        "category": "El Porqué de cada cosa",
+        "description": "Es encantador pensar por sí mismo y en mi posición de profesor me encuentro con miles de porqués y ayudo a llegar a ellos. La primera premisa es \"dude del profesor\" investigue por sí mismo. Lo que sigue son raciocinios sobre tales porqués con la ayuda de la física y la mecánica, no de la red, de eso no hay por allá en esos extramuros."
+    },
+    {
+        "category": "Catálogo de Tronquitos",
+        "description": "Peripecias e historia de un grupo como cualquier otro, pero que fue donde nos reunimos por años. Sirva de ejemplo a lo que jamás debe repetirse."
+    },
+    {
+        "category": "Fabulas de Jacobo",
+        "description": "Fabulas Esópicas y Samaniegas con más de una moraleja. PD: Agradezco ayudas e ideas."
+    },
+    {
+        "category": "Tratados de Libros",
+        "description": "Luego de leer un libro es importante razonar sobre él. De esto se trata y a la vez es un ejercicio de escritura."
+    },
+    {
+        "category": "Cuentos Para Antes de Despertar",
+        "description": "Bartolomé Koan me ha contado cuentos y ahora quiero ponerlos acá para que otros también se desvelen con lo que el maestro me contaba para que no me durmiera."
+    },
+    {
+        "category": "La Raíz del Igdrasil",
+        "description": "En la raíz del Ygdrasil está la cabeza del gigante Mimír, que todo lo sabe. Nadie dice que su palabra sea verdad, pero esa no es su misión, sólo repito lo que aquella cabeza le dijo alguna vez al dios Odín."
+    },
+    {
+        "category": "Retazos sin Cocer",
+        "description": "Estos textos fueron escritos en los años ochenta y noventa y los recogí de mis cuadernos viejos, pueden no tener un valor lírico, pero tienen un valor histórico en mi formación."
+    },
+    {
+        "category": "Canciones",
+        "description": "Para algunas personas que nos preguntan donde y cómo se hicieron ciertas canciones y a quién fueron compuestas o con qué musa."
+    }
+]
