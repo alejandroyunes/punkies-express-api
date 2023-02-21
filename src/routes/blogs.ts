@@ -34,10 +34,10 @@ blogRouter.post('/comment', async (req, res) => {
 //   return comment
 // })
 
-// blogArray.forEach(e => {
-//   const blog = new BlogSchema(e)
-//   return blog.save()
-// })
+blogArray.forEach(e => {
+  const blog = new BlogSchema(e)
+  return blog.save()
+})
 
 
 // commentArray.forEach(e => {
