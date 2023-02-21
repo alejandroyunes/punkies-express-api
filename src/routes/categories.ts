@@ -6,18 +6,26 @@ import categorySchema from '../models/categories'
 
 const categoryRouter = express.Router()
 
-// jsonfile.forEach(e => new categorySchema(e).save())
 
+categoryRouter.get('/', async (_, res) => {
+  const categories = await categorySchema.find()
+  res.send(categories)
+})
+
+categoryRouter.get('/blog/:id', async (_, res) => {
+  // const blog = await blogSchema.findById(req.params.id).populate('category')
+  res.send('blog')
+})
+
+
+// jsonfile.forEach(e => new categorySchema(e).save())
 
 // router.get('/:category', async (req, res) => {
 //   const category = await categoryServices.getBlogsByCategory(req.params.category)
 //   return res.send(category)
 // })
 
-categoryRouter.get('/', async (_, res) => {
-  const categories = await categorySchema.find()
-  res.send(categories)
-})
+
 
 // const newEntry = new categorySchema(
 //   {

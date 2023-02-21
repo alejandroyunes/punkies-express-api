@@ -18,11 +18,6 @@ app.use(express.json())
 app.use(cors())
 const port = process.env.PORT || 3001
 
-app.get('/ping', (req, res) => {
-  console.log('someone pined')
-  res.send(req.body)
-})
-
 app.use('/api/diaries', diaryRouter)
 app.use('/blog', blogRouter)
 app.use('/category', categoriesRouter)

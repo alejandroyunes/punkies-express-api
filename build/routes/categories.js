@@ -17,15 +17,19 @@ const express_1 = __importDefault(require("express"));
 const categories_1 = __importDefault(require("../models/categories"));
 // import jsonfile from '../data/categories.json'
 const categoryRouter = express_1.default.Router();
+categoryRouter.get('/', (_, res) => __awaiter(void 0, void 0, void 0, function* () {
+    const categories = yield categories_1.default.find();
+    res.send(categories);
+}));
+categoryRouter.get('/blog/:id', (_, res) => __awaiter(void 0, void 0, void 0, function* () {
+    // const blog = await blogSchema.findById(req.params.id).populate('category')
+    res.send('blog');
+}));
 // jsonfile.forEach(e => new categorySchema(e).save())
 // router.get('/:category', async (req, res) => {
 //   const category = await categoryServices.getBlogsByCategory(req.params.category)
 //   return res.send(category)
 // })
-categoryRouter.get('/', (_, res) => __awaiter(void 0, void 0, void 0, function* () {
-    const categories = yield categories_1.default.find();
-    res.send(categories);
-}));
 // const newEntry = new categorySchema(
 //   {
 //     "category": "Koanes todo el día",

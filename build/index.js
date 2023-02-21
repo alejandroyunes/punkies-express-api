@@ -18,10 +18,6 @@ const app = (0, express_1.default)();
 app.use(express_1.default.json());
 app.use(cors());
 const port = process.env.PORT || 3001;
-app.get('/ping', (req, res) => {
-    console.log('someone pined');
-    res.send(req.body);
-});
 app.use('/api/diaries', diaries_1.default);
 app.use('/blog', blogs_1.default);
 app.use('/category', categories_1.default);

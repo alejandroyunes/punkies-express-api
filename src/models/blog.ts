@@ -1,41 +1,5 @@
 import mongoose, { Schema } from 'mongoose'
-
-// const blogSchema = new Schema({
-//   slug: {
-//     type: String,
-//     required: true
-//   },
-//   category: {
-//     type: String,
-//     required: true
-//   },
-//   title: {
-//     type: String,
-//     required: true
-//   },
-//   brief: {
-//     type: String,
-//     required: true
-//   },
-//   description: {
-//     type: String,
-//     required: true
-//   },
-//   dateString: {
-//     type: String,
-//     required: true
-//   },
-//   date: {
-//     type: Date,
-//     required: true
-//   },
-//   year: {
-//     type: String,
-//     required: true
-//   }
-// })
-
-// export default mongoose.model('blog', blogSchema)
+const mongoosePaginate = require('mongoose-paginate-v2');
 
 const blogSchema = new Schema({
   slug: String,
@@ -45,7 +9,10 @@ const blogSchema = new Schema({
   description: String,
   date: Date,
   dateString: String,
-  year: String
+  year: String,
 })
 
-export default mongoose.model('Blog', blogSchema)
+blogSchema.plugin(mongoosePaginate);
+
+module.exports = mongoose.model('Blog', blogSchema)
+

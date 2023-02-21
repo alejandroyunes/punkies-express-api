@@ -24,9 +24,12 @@ var __importStar = (this && this.__importStar) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const mongoose_1 = __importStar(require("mongoose"));
-const categorySchema = new mongoose_1.Schema({
-    category: String,
-    description: String,
+const mongoosePaginate = require('mongoose-paginate-v2');
+const commentSchema = new mongoose_1.Schema({
+    blogId: { type: mongoose_1.Schema.Types.ObjectId, ref: 'Blog' },
+    comment: String,
+    name: String,
+    createdAt: Date
 });
-categorySchema;
-exports.default = mongoose_1.default.model('Category', categorySchema);
+commentSchema.plugin(mongoosePaginate);
+module.exports = mongoose_1.default.model('Comment', commentSchema);

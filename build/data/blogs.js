@@ -102,6 +102,28 @@ const arrayCanciones = [
     }
 ];
 let pensum = '63df730c8dc20cea77cf4c16';
-const pensumArray = [{}];
+const pensumArray = [
+    {
+        "slug": "pensum-contabilidad",
+        "category": "63df730c8dc20cea77cf4c16",
+        "title": "Contabilidad",
+        "brief": "",
+        "description": "",
+        "date": "12/31/2018",
+        "dateString": "31 de Dic, 2018",
+        "year": "2018"
+    }
+];
 let alegatos = '';
-const alegatosArray = [{}];
+const alegatosArray = [
+    {
+        "slug": "",
+        "category": "",
+        "title": "",
+        "brief": "",
+        "description": "",
+        "date": "12/31/2018",
+        "dateString": "31 de Dic, 2018",
+        "year": "2018"
+    }
+];

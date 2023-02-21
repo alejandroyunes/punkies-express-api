@@ -24,41 +24,7 @@ var __importStar = (this && this.__importStar) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const mongoose_1 = __importStar(require("mongoose"));
-// const blogSchema = new Schema({
-//   slug: {
-//     type: String,
-//     required: true
-//   },
-//   category: {
-//     type: String,
-//     required: true
-//   },
-//   title: {
-//     type: String,
-//     required: true
-//   },
-//   brief: {
-//     type: String,
-//     required: true
-//   },
-//   description: {
-//     type: String,
-//     required: true
-//   },
-//   dateString: {
-//     type: String,
-//     required: true
-//   },
-//   date: {
-//     type: Date,
-//     required: true
-//   },
-//   year: {
-//     type: String,
-//     required: true
-//   }
-// })
-// export default mongoose.model('blog', blogSchema)
+const mongoosePaginate = require('mongoose-paginate-v2');
 const blogSchema = new mongoose_1.Schema({
     slug: String,
     category: { type: mongoose_1.Schema.Types.ObjectId, ref: 'Category' },
@@ -67,6 +33,7 @@ const blogSchema = new mongoose_1.Schema({
     description: String,
     date: Date,
     dateString: String,
-    year: String
+    year: String,
 });
-exports.default = mongoose_1.default.model('Blog', blogSchema);
+blogSchema.plugin(mongoosePaginate);
+module.exports = mongoose_1.default.model('Blog', blogSchema);

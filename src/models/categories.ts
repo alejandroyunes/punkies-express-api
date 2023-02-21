@@ -5,4 +5,6 @@ const categorySchema = new Schema({
   description: String,
 })
 
+categorySchema
+
 export default mongoose.model('Category', categorySchema)
