@@ -28,7 +28,6 @@ blogRouter.post('/comment', async (req, res) => {
   return comment
 })
 
-
 // blogRouter.patch('/patch', async (req, _) => {
 //   const comment = await blogServices.blogPatchComment(req, _)
 
