@@ -49,8 +49,9 @@ blogRouter.get('/:id', (req, res) => __awaiter(void 0, void 0, void 0, function*
     res.send({ blog, comment });
 }));
 blogRouter.post('/comment', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
-    blogServices.postCommentBlog(req, res);
-    res.end();
+    const comment = yield blogServices.postCommentBlog(req, res);
+    // res.send(comment)
+    return 'saved';
 }));
 // blogRouter.patch('/patch', async (req, _) => {
 //   const comment = await blogServices.blogPatchComment(req, _)

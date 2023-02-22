@@ -38,7 +38,8 @@ export const postCommentBlog = async (req, res) => {
     res.status(200).json({ message: 'ok' });
     return savedComment
   } catch (err) {
-    return res.status(err)
+    res.status(err)
+    return err
     // console.log(err)
   }
 }
