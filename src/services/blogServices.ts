@@ -39,6 +39,7 @@ export const postCommentBlog = async (req, res) => {
     return savedComment
   } catch (err) {
     res.status(err)
+    console.log(err)
   }
 }
 

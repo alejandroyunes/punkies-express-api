@@ -48,6 +48,7 @@ const postCommentBlog = (req, res) => __awaiter(void 0, void 0, void 0, function
     }
     catch (err) {
         res.status(err);
+        console.log(err);
     }
 });
 exports.postCommentBlog = postCommentBlog;
