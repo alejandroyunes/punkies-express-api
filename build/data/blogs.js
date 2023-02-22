@@ -127,3 +127,156 @@ const alegatosArray = [
         "year": "2018"
     }
 ];
+let sindromesEfectos = '63df730c8dc20cea77cf4c1b';
+const sindromesEfectosArray = [
+    {
+        "slug": "teoria-de-la-inflacion",
+        "category": "63df730c8dc20cea77cf4c1b",
+        "title": "Teroría de la Inflación Caotica",
+        "brief": "Se basa en la idea de que el universo es eterno y se reproduce constantemente a través de un mecanismo más o menos casual, es decir, un poco caótico, estos mini universos no pueden chocar ni devorarse entre sí. (Del ruso Andrei Linde).",
+        "description": "Se basa en la idea de que el universo es eterno y se reproduce constantemente a través de un mecanismo más o menos casual, es decir, un poco caótico, estos mini universos no pueden chocar ni devorarse entre sí. (Del ruso Andrei Linde).",
+        "date": "17/09/2017",
+        "dateString": "17 de Sep, 2017",
+        "year": "2017"
+    }
+];
+let pildorasDeVeneno = '63df730c8dc20cea77cf4c1b';
+const pildorasDeVenenoArray = [
+    {
+        "slug": "verdades-absolutas",
+        "category": "63df730c8dc20cea77cf4c1c",
+        "title": "Verdades Absolutas",
+        "brief": "- La peste de la religión cristiana acabó con los nativos de américa, cuando no atacaban a espada evangelizaban. El golpe más grande que nos dieron fue la uniformidad de creer en un dios judío que murió por pecados ajenos y en nuestro acervo cultural y psicológico. Es completamente válido decir que la tal religión, al que no mató lo dejó bobo.",
+        "description": "- La peste de la religión cristiana acabó con los nativos de américa, cuando no atacaban a espada evangelizaban. El golpe más grande que nos dieron fue la uniformidad de creer en un dios judío que murió por pecados ajenos y en nuestro acervo cultural y psicológico. Es completamente válido decir que la tal religión, al que no mató lo dejó bobo.\n\n- No es necesario vivir con alguien en una comunidad, el ser humano es social pero puede aislarse. De aquí proviene una verdad y es que, es la unión la que nos da la fuerza, pero es en esa unión en que encontramos lo peor, que es al mismísimo ser humano.\n\n- El matrimonio es una forma de unión que reparte responsabilidades y divide sueños, destroza voluntades y amarga dos vidas condenándolas a sí mismas.\n\n- La muerte es un inapelable, nadie puede escapar a ella. Quede muy simple el mercader de Bagdad.\n\n- La física sólo acepta la velocidad de la luz como absoluta, la filosofía no es absoluta, la muerte si y el conocimiento adquirido y puesto a prueba durante esa vida. No siendo absoluta para la humanidad, es absoluta para el damnificado que se esfuerza en dejarla escrita. Claro queda que sólo aprendemos en carne propia y por riesgo de seguir el camino.\n\n- No existe una historia que no esté viciada con los pies de página del vencedor y que no se inmole y se dé golpes de pecho o resulte sacrificada por algunos terceros que la leen.\n\n- La humanidad no cree en lo obvio aunque lo explique la ciencia porque no cree en la ciencia y aunque se aproveche de la radio, la televisión y las comunicaciones celulares y satelitales, pero espere a que le hablen de un ovni, un fantasma o la aparición del diablo y utilizará todo medio a su alcance para propagar tal divulgación que sí puede explicar porque su ciencia se llama religión.\n\n- No existe una sola forma de libertad que no esté coartada. !La libertad es una utopía¡ Somos libres de elegir lo que los demás hicieron para nosotros: El canal, la ropa, el trabajo... En algunas ocasiones ni eso. El trabajo es una esclavitud.. El amor es una esclavitud... la fe es una esclavitud... el pensamiento es una esclavitud... ¿Cuyo perro eres tú señor?\n\n- !La ciencia no acepta absolutos¡ Es cierta forma de decir que aceptamos los valores relativistas de la física del espacio-tiempo. Pero es falso, la física aplicada de Newton nos arroja miles de absolutismos, para ejemplo un coche a 60 KPH, viajará 180 K en tres H. Esa gráfica es absoluta y definitiva aunque no exista un automóvil sobre la tierra que pueda viajar a velocidad constante de 60 KPH sin disminuir un ápice o aumentar uno de ellos. Ejemplos hay miles. Todo lo demás en la tierra es absoluto: el amor, la belleza, el dinero, el poder, el genio...\n\n- No hay manera posible de igualdad en ninguna tribu humana. Siempre aparece un macho alfa, una hembra beta, uno que sabe rastrear mejor o que vende más barato, uno que ofrece libertad o que predica un paraíso y hasta ahí llega la cacareada igualdad humana o animal.\n\n- No existe un sólo problema en el mundo que, puestos a pensar, no tenga una solución o que, como ya lo ha dicho una caterva de pensadores, esté solucionado por no tenerla.",
+        "date": "12/12/2021",
+        "dateString": "12 de Dic, 2021",
+        "year": "2021"
+    }
+];
+let lasFabulasDeJacobo = '63df730c8dc20cea77cf4c1d';
+const lasFabulasDeJacoboArray = [
+    {
+        "slug": "perro-ponce-y-liebre-carranza",
+        "category": "63df730c8dc20cea77cf4c1d",
+        "title": "Perro Ponce Y Liebre Carranza",
+        "brief": "Perro Ponce el valeroso y Liebre Carranza el prudente, vieron venir frente a frente al lobo más horroroso. El prudente, temeroso, a una encina se abalanza y, cual otro Sancho Panza, en las ramas se salvó. Perro Ponce allí murió.",
+        "description": "Perro Ponce el valeroso y Liebre Carranza el prudente, vieron venir frente a frente al lobo más horroroso. El prudente, temeroso, a una encina se abalanza y, cual otro Sancho Panza, en las ramas se salvó. Perro Ponce allí murió.\n\nMoralejas: \n\n1. Imitemos a Carranza.\n\n2. Los Cobardes viven para contar la historia.\n\n3. Es mejor que digan aquí corrió que aquí murió.\n\n4. Viven los hijos de Carranza, los de Ponce siguieron su ejemplo.",
+        "date": "12/31/2018",
+        "dateString": "31 de Dic, 2018",
+        "year": "2018"
+    },
+    {
+        "slug": "el-camello-y-la-pulga",
+        "category": "63df730c8dc20cea77cf4c1d",
+        "title": "El Camello y La Pulga",
+        "brief": "Un camello iba bien cansado por la carga que llevaba encima, cuando se quejó, de él se bajó una pulga arrogante que expresó, \"del peso te libro yo\" y el camello contestó: \"Gracias señor elefante.",
+        "description": "Un camello iba bien cansado por la carga que llevaba encima, cuando se quejó, de él se bajó una pulga arrogante que expresó, \"del peso te libro yo\" y el camello contestó: \"Gracias señor elefante.\"\n\nMoralejas:\n\n1. La autoestima está subvalorada.\n\n2. El deber de un entrenador es apoyar la autoestima.\n\n3. Una pulga menos, es una pulga menos.\n\n4. Toda ayuda por pequeña que sea vale un elefante.",
+        "date": "06/20/2017",
+        "dateString": "06 de Jun, 2017",
+        "year": "2017"
+    }
+];
+let elPorqueDeCadaCosa = '63df730c8dc20cea77cf4c1e';
+const elPorqueDeCadaCosaArray = [
+    {
+        "slug": "pedimos-auxilio",
+        "category": "63df730c8dc20cea77cf4c1e",
+        "title": "Pedimos Auxilio",
+        "brief": "No dudo que existan mil maneras de pedir auxilio y ya sobre la gran muralla china existían maneras de comunicar cosas entre las almenas sobre ella. No es de extrañar que existiera alguna manera entre Neandertales u Homo habilis para indicar un peligro como lo hacen muchos animales.",
+        "description": "No dudo que existan mil maneras de pedir auxilio y ya sobre la gran muralla china existían maneras de comunicar cosas entre las almenas sobre ella. No es de extrañar que existiera alguna manera entre Neandertales u Homo habilis para indicar un peligro como lo hacen muchos animales. La humanidad ha creado por necesidad y facilidad una serie de códigos para comunicar la intención de auxilio con señales manuales, letras o acciones. Seguir esas historias es correspondencia de un historiador y saber cuando se estandarizaron los estándares no es una odisea... Shin chi Huan di, emperador chino, empezó con la unificación de las medidas y los libros. Un barco hundiéndose y gente pidiendo auxilio es señal de auxilio. Si alguien se cae le ayudamos a pararse y cosas así, pero en un desastre naval, que fue el primer transporte de distancia de la humanidad se generaron comunicaciones con señales de humo o de resplandores, tal cual se comunicaban entre almenas en la gran muralla china, de día con humo y de noche con luz de fogatas. Si se sigue el sabio consejo que donde hay humo hay fuego, se sigue que donde hay fuego hay peligro. La bandera roja indica peligro, la amarilla peligro medio y el verde peligro bajo y su relación con los semáforos nos deja una explicación simple. Luego la cosa se complico y quedaron los mensajes de banderas de colores más complejas que no requiero para este porqué. No existía la transmisión sin hilos o era burda cuando se diseñó, es más fácil enviar un código que una nota entera, el código CQD que, provenga de donde provenga se acercaba a Come Quick Danger (vengan rápido peligro), que se cambiaría a SOS por su fácil nemotecnia en morse, tres puntos, tres rayas y de nuevo tres puntos y que se puede hacer con luz, sonido u ondas de radio. Tres veces el término mayday que proviene del francés m'aider (ayúdame), también significan auxilio\n\nBanderines:\n\na. La idea de comunicar un mensaje es que todos lo hagamos de la misma manera y por eso la estandarización internacional es un compromiso no una obligación. El uso del código fonético internacional y del código internacional de señales creado  en 1887 para las flotas de navíos, permite que las comunicaciones sean claras y entendibles.\n\nb. En un inicio CQD fue señal de auxilio pero su paso a morse era difícil así que se optó por SOS que son ...---... y cuya traducción no es importante para nada, aunque quieran decirnos save our souls o save our ships o... Simplemente es la señal de auxilio por excelencia y facilidad de comunicación. \n\nc. La palabra escrita SOS con materiales contrastantes o tres fogatas igualmente espaciadas formando un triángulo, aunque ya dijimos que humo y fuego son señales de ayuda. El brillo y resplandor de ciertos objetos también indica ayuda a grandes distancias. Una X es no podemos seguir y una F necesitamos comida.\n\nd. Con un silbato o una linterna también se puede hacer SOS en morse ...---... o seis silbidos por minuto con un silbato o seis destellos por minuto con una linterna. Las bengalas por su color indican la necesidad de ayuda o la útil iluminación.\n\ne. Últimamente se ha popularizado una mano cerrada sobre el pulgar para indicar la necesidad de ayuda.\n\nf. Un código repetido pan-pan por triplicado indica que hay una urgencia a solucionar. \n\ng. XGE en el código internacional de señales es \"nos rendimos\" y sabemos que la bandera blanca pide tregua o señala esa rendición.\n\nh. En aviación se usan los códigos 7500 para amenaza o secuestro, 7700 para indicar emergencias y 7600 como fallo de radio.\n\ni. Claro, cada disciplina tendrá sus prioridades y emergencias y por eso acabo con estos códigos hospitalarios, usados para agilizar o mover ciertos engranajes humanos con más solicitud. Código 1: sepsis; código 2 STEMI: infarto al miocardio con elevación del ST; código 3 STROKE: evento vascular cerebral y código 4: trauma.",
+        "date": "01/15/2023",
+        "dateString": "15 de Ene, 2023",
+        "year": "2023"
+    }
+];
+let catalogodetronkitos = '63df730c8dc20cea77cf4c1f';
+const catalogodetronkitosArray = [
+    {
+        "slug": "catalogo-de-tronquitos",
+        "category": "63df730c8dc20cea77cf4c1f",
+        "title": "Contestador",
+        "brief": "Tenía en mi contestador un mensaje en inglés: \"Hellow, these is the hall of justice, superman is not here, please leave your mesage\". Alguna vez me llamó Elkin B. y me dejó este mensaje: \"Hey Jaimico... contesta home... necesito a Batman y Robin... pa'una fiesta gay.\"",
+        "description": "Tenía en mi contestador un mensaje en inglés: \"Hellow, these is the hall of justice, superman is not here, please leave your mesage\". Alguna vez me llamó Elkin B. y me dejó este mensaje: \"Hey Jaimico... contesta home... necesito a Batman y Robin... pa'una fiesta gay.\"",
+        "date": "06/19/2023",
+        "dateString": "19 de Jun, 2019",
+        "year": "2019"
+    }
+];
+let Tratadoslibros = '63df730c8dc20cea77cf4c21';
+const lasInombrablesArray = [
+    {
+        "slug": "el-motel-voyeur-gay-talese",
+        "category": "63df730c8dc20cea77cf4c21",
+        "title": "El Motel del Voyeur Gay Talese",
+        "brief": "EPP: El periodismo, no siempre tiene un fin. ¿O sí? Éste aclara muy bien el carácter erótico sexual de la humanidad.\n\nR: Gerald Foos contacta al periodista para compartir con él sus visiones voyeur en el hotel \"Manor House\" donde practicó hendijas de espionaje y al que llamó su laboratorio de observación... Exhibiciones variopintas de la sexualidad y todos sus matices y, \"La prueba de honestidad\"",
+        "description": "EPP: El periodismo, no siempre tiene un fin. ¿O sí? Éste aclara muy bien el carácter erótico sexual de la humanidad.\n\nR: Gerald Foos contacta al periodista para compartir con él sus visiones voyeur en el hotel \"Manor House\" donde practicó hendijas de espionaje y al que llamó su laboratorio de observación... Exhibiciones variopintas de la sexualidad y todos sus matices y, \"La prueba de honestidad\".\n\n- Nadie cobra menos por hora que un voyeur.\n\n- Si los jugadores fueran armados con cuchillos y armas de fuego, no habría estadio lo bastante grande para contener a las multitudes.\n\n- Ahora que mis observaciones de la gente se acercan a su quinto año, comienzo a ser pesimista respecto al rumbo que está tomando nuestra sociedad y yo mismo me siento más deprimido a medida que comprendo la futilidad de todo.",
+        "date": "02/19/2023",
+        "dateString": "10 de Feb, 2023",
+        "year": "2023"
+    }
+];
+let laRaiz = '';
+const LaRaizArray = [
+    {
+        "slug": "harakiri",
+        "category": "63df730c8dc20cea77cf4c23",
+        "title": "Harakiri",
+        "brief": "Hay tres formas de llevar al \"suicidio japonés\" que hacían por honor: La primera es el \"hara kiri\" (literalmente cortar el vientre) reservado para los samurais y la clase servidora. El \"Seppukku\" como un sacrificio ritual con banda resolutiva, Kaishaku que cortaba la cabeza, espada ceremonial y demás, reservada a la clase de mayor nivel. ",
+        "description": "Hay tres formas de llevar al \"suicidio japonés\" que hacían por honor: La primera es el \"hara kiri\" (literalmente cortar el vientre) reservado para los samurais y la clase servidora. El \"Seppukku\" como un sacrificio ritual con banda resolutiva, Kaishaku que cortaba la cabeza, espada ceremonial y demás, reservada a la clase de mayor nivel. ",
+        "date": "02/05/2023",
+        "dateString": "5 de Feb, 2023",
+        "year": "2023"
+    }
+];
+let cuentosparaAntes = '';
+const cuentosparaAntesArray = [
+    {
+        "slug": "mumm-ra-el-inmortal",
+        "category": "63df730c8dc20cea77cf4c22",
+        "title": "Mumm-ra el inmortal",
+        "brief": "Consiguió tantos enemigos en su vida que no se supo si lo hacía a propósito o simplemente era una manera de lidiar con sus problemas de autocompasión e inseguridad. Alguna vez se casó y alguna vez le fueron infiel, nada nuevo si me preguntan, la infidelidad nació con la complicación de la fidelidad tan antinatural.",
+        "description": "Consiguió tantos enemigos en su vida que no se supo si lo hacía a propósito o simplemente era una manera de lidiar con sus problemas de autocompasión e inseguridad. Alguna vez se casó y alguna vez le fueron infiel, nada nuevo si me preguntan, la infidelidad nació con la complicación de la fidelidad tan antinatural. A mí me dicen que algunos amigos del doliente inmortal conocían el hecho de la infidelidad femenina, que aquí nunca pondremos en duda el de la infidelidad masculina y, a pesar de esfuerzos y remanentes ocurrió el desperfecto que terminó en divorcio, no sólo el legal sino el físico y no únicamente el de la feliz pareja sino también el de los infelices que no sabían que debían hacer con el conocimiento empírico de un desliz. Sufrieron Cheetara y Pumara el desprecio de Muum-ra. Cheetara se casó y desapareció, pero Pumara fue perdonada por alguna extraña razón que no conozco, pero que asumo tiene que ver con el mismo caso tratado. Sí, incesto en el aparador. Y Pantro, que nada tenía que ver también lo sufrió, muy a pesar de que fue siempre muy servicial. Se jura que en la casa de los espíritus decadentes permaneció por más de un año todo el equipo de uno al servicio del otro sin cobro de nada y también recuerdo como salió Pantro desesperado a recogerlos cuando el inmortal le espetó \"Viene por eso o lo saco a la basura\" y luego me contarían en versiones similares, uno harto orgulloso y el otro apenado que no pudo pasar de la puerta porque el uno lo prohibió. También me consta que Pantro trató de explicarse y decir que él no sabía nada y que ni siquiera le interesaba esa cuestión de lealtad o amor y recuerdo como, alguna vez que Pantro fue a visitarme, recibí la más impía actuación del desaire y me expresó la incomodidad que sentía de viajar en la misma camioneta que aquel y que si no fuera por que estaba tarde o porque no tenía dinero, su dignidad le habría dictado que se bajara y se fuera en taxi. Es buena la dignidad que conoce de raciocinios. Si mal no recuerdo la discusión con otro antropoide se debió a que se lo llevó para \"ayudar\" en un concierto y la ayuda que recibió fue que se fue a dormir con una querida. El antropoide hizo lo mismo que hubiera hecho él y eso lo condenó, a más que después quedaron en un lío de dineros que es más excusa porque dinero perdemos y perdimos todos en ese evento y fue el tercer vetado ya que hubo un segundo antropoide y hasta un tercero. Yo quise llamarlos los pecas en contraposición y paralelo a los pepes porque, la momia inmortal juró que al verlos los golpearía o los echaría, incluso alguna vez, suponiendo que estamos todavía en la película, y que discutimos por la separación de Tigro de la columna de asalto y se concibió que Tigro me odiaba por defenderme y que amigo mío no era, sino del inmortal, yo le dije, entonces si viene Tigro yo también lo echo y le casco, pero nada más alejado de la realidad, lo dije para ver si caía en cuenta lo tonto de lo que planteaba, pero nada, fue como echarle gasolina a un incendio y se levantó y pataleó y gritó... Cuando quiero reunirme con alguno de ellos o por casualidad me visitan o llegan a un sitio donde estoy, no puedo saludarlos o llevarlos a la mesa para no ofender a la eminencia o para que no se quede estirando trompa y tenga que escoger entre su dignidad y el precio del Uber. Una vez andaba yo con una chica que se quedó largo rato con Pantro antes de rendirle pleitesía al jefe y éste le susurro entre dientes \"¿a qué vino? se puede quedar allá con el otro\". Pobrecita la niña, no entendió nada por el ruido y porque no estaba actualizada con respecto a la saga completa de los Thundercats. Para eso era este informe, mal que bien no refleja sino mi parte de la historia, no es bueno que sea yo el que la relate. Mis enemigos lo son por encima de todo y espero siempre que no asistan a donde voy, si van y no me los aguanto me voy yo y si resulta que fueron a buscarme el lado, más rápido parto, pero ¿Cómo puedo explicarle a la momia antes de que se transforme que no soy un niño al que le puedan prohibir la amistad de otros niños? ¿Qué si los niños van a una fiesta abierta es porque la fiesta es abierta y que nadie tiene recomendaciones, ni privilegios aparte? y por último y es tal vez la cuestión más importante de este capítulo ¿Cómo hacemos para acomodar el mundo a tu cubil?",
+        "date": "12/11/2022",
+        "dateString": "11 de Dic, 2022",
+        "year": "2022"
+    }
+];
+let retazosSinCocer = '';
+const retazosSinCocerArray = [
+    {
+        "slug": "los-nudos",
+        "category": "63df730c8dc20cea77cf4c24",
+        "title": "Los Nudos",
+        "brief": "Llevo mucho tiempo pensando ¿Por qué al hablar de los demás digo más de mí que de ellos como hubo de decir un compañero, cuando otro que estaba más allá habló de la superficialidad de la mujer.? Yo fui atacado, pero esperé para defenderme. Creo que ya me tocó el turno. ",
+        "description": "Llevo mucho tiempo pensando ¿Por qué al hablar de los demás digo más de mí que de ellos como hubo de decir un compañero, cuando otro que estaba más allá habló de la superficialidad de la mujer.? Yo fui atacado, pero esperé para defenderme. Creo que ya me tocó el turno. \nUna frase grandilocuente destapó la olla y lentamente de ella salen mil nudos todos iguales. \nCensura el nudo de la histeria. Habla el nudo de la envidia en nombre de la moral. Castiga el mudo de la justicia para ocultar el dolo compinchado con el nudo verdugo y el nudo horca. \nLos nudos son entes muertos, los muertos, nudos insatisfechos. Nudos fabricados con el barro de la infamia. Testaferros emancipados en la blasonería de su alcance, asalariados por el gigantesco triunvirato que, a su vez, es un vil vasallo del imperio. El nudo muestra su doblez pero se niega a ser desatado. Muestra su nudez para autocompadecerse y sentirse enfermo y despertar ternura en los demás. \n¿Qué mal de aquellos tan burdos deba aquejarme hoy a mí? \n¿Qué mal ese de mostrar el mal de otros para poder mostrar el mío? \nYo no sufro a petición del interesado, a mi mal no lo acoge la adusta morada y no escribe para demostrar algo. Acusarme de ese mal o de otro cualquiera no me hará reflejar el mío.\n¿Cuál opinión? Mi decir \"no\"  no es una opinión, mi opinión no tiene sentido, mi sentido es un sinsentido copulando infame con el sentido ajeno y dando a luz mortales heridas que supuran llamas en vez de flema. Es la flama-flema que no deja de arder supurar porque de alguna forma está viva y es como la sal en la herida, se aviva y duele. La verdad esa vida duele a todos los nudos de la inmensa tribu humana, vida que no desata sino que enreda, que corrompe, que arde, que se quema sin dejar cenizas porque no renace como el ave fénix sino que siempre está viva.\nY todos son nudos ciegos que ha medida que envejecen se enredan más y más. Nudos nictálopes que no retroceden para ver que dejaron atrás porque llevan un afán, una meta, un destino: ir para adelante, entrelazarse más los unos con los otros, para evitar que el otro les tome ventaja y que el uno le aplaste la cabeza y así continúan hasta confundirse en una corambre, viciados con el vicio, perdidos en el iluminado encuentro, avasallándose los unos a los otros; limitándose los unos a los otros; envidiándose los unos a los otros.\n¿Porque carajos habría yo de hablar a favor de ellos o quedarme callado ante sus actos? Dímelo tú sagrado oráculo, arúspice perverso que lees las entrañas por las que corre el fluido frenético y luego los devoras sin temor a contagiarte de ese milenario mal social. Lo que está mal no hay que destruirlo ni reedificarlo. ¿Entonces que? ¿Soportamos en la incólume tolerancia o nos adherimos a lustrosa pestilencia?\nSi hay un fin tras mi angustiosa retórica no es el que tus dotes de adivino te sugieren, ¿que raro objetivo oculto me antepones? ¿piensas acaso que por el simple hecho de hablar o escribir coherentemente sobre las mujeres es porque he sido un marginado sexual o algo por el estilo? o que ¿mi diatriba alarmante contra todo aquello que se opone a mi tipo de libertad se deba al suceso de que mi tipo de libertad haya sido violada? impunemente no me buscarás guerra. El delito de adulterio no es el delito de ser adulto. Las altas cimas no son culpables de su elevada posición. ¿Traicionó acaso el delator milenario por la absurda suma de treinta monedas?  o ¿Por la traición misma, por la grandeza de aquella traición que habría de redimir al mundo? ¿Y qué me dices de su suicidio? ¿Se suicido acaso por expiar su horrendo pecado? o ¿Tal vez consternado por tan poco dinero, sabiendo que hubiera podido pedir más se castigó a sí mismo por ser tan falto de ambición? \nRespóndeme tú arcángel del derecho que todo lo sabes.\n\n**Primer capítulo de un texto intitulado \"Insultología aplicada\"",
+        "date": "01/19/2019",
+        "dateString": "19 de Ene, 2019",
+        "year": "2019"
+    }
+];
+let ideasConce = '';
+const ideasConceArray = [
+    {
+        "slug": "",
+        "category": "",
+        "title": "",
+        "brief": "",
+        "description": "",
+        "date": "01/15/2023",
+        "dateString": "15 de Ene, 2023",
+        "year": "2023"
+    }
+];
+let Matematicas = '';
+const MatematicasArray = [
+    {
+        "slug": "el-mito-de-la-resurreccion",
+        "category": "63df730c8dc20cea77cf4c19",
+        "title": "El Mito de la Resurrección",
+        "brief": "Este otro cuento tiene la misma historia que el mito del eclipse. Aquella profesora amante de la lectura a quien llamábamos Lulú, lo llevó en una hoja que perdí y su memoria me fue devuelta en una epifanía. Pido igual disculpas por deformarla y ayuda para saber de quien es.\n",
+        "description": "Este otro cuento tiene la misma historia que el mito del eclipse. Aquella profesora amante de la lectura a quien llamábamos Lulú, lo llevó en una hoja que perdí y su memoria me fue devuelta en una epifanía. Pido igual disculpas por deformarla y ayuda para saber de quien es.\n\nNo hará más de 500 años llegó a estos puertos, de tierras lejanas, un español cubierto de una dura capa brillante que hablaba de un dios único que a todos protegía y quería. Fue recibido y fueron recibidas las enseñanzas que hombres con tonsura les impusieron y se maravillaron con un dios que resucitó a los tres días e incluso adoraron a esos hombres de plata y les llevaban en comitivas por las nuevas tierras. Un día que atravesaban un río, el jefe indígena dio la orden de ahogar al predicador y  luego de que le sacaran muerto a la orilla, dio la orden de que un grupo de hombres vigilara el cadáver por tres días y que si resucitaba volviesen a matarlo.\n\nDe nuevo, lo más importante acá es la verificación científica.",
+        "date": "01/15/2023",
+        "dateString": "5 de Dic, 2021",
+        "year": "2021"
+    }
+];

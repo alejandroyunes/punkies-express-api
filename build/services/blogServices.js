@@ -40,11 +40,12 @@ const getComments = (id) => __awaiter(void 0, void 0, void 0, function* () {
 });
 exports.getComments = getComments;
 const postCommentBlog = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+    res.send('hit');
     const comment = new CommentSchema(req.body);
     try {
-        const savedComent = yield comment.save();
+        const savedComment = yield comment.save();
         res.status(200).json({ message: 'ok' });
-        return savedComent;
+        return savedComment;
     }
     catch (err) {
         res.status(err);
