@@ -25,10 +25,9 @@ blogRouter.post('/comment', async (req, res) => {
 
   try {
     const comment = await blogServices.postCommentBlog(req, res)
-    res.status(200).json({ message: 'ok' });
-    res.send(comment)
+    return comment
   } catch (err) {
-    res.status(err).json({ message: 'error: ', err });
+    return err
   }
 })
 

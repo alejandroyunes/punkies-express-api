@@ -51,11 +51,10 @@ blogRouter.get('/:id', (req, res) => __awaiter(void 0, void 0, void 0, function*
 blogRouter.post('/comment', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     try {
         const comment = yield blogServices.postCommentBlog(req, res);
-        res.status(200).json({ message: 'ok' });
-        res.send(comment);
+        return comment;
     }
     catch (err) {
-        res.status(err).json({ message: 'error: ', err });
+        return err;
     }
 }));
 // blogRouter.patch('/patch', async (req, _) => {
