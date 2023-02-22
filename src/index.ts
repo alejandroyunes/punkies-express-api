@@ -15,9 +15,7 @@ mongoose
 
 const app = express()
 app.use(express.json())
-app.use(cors({
-  origin: '*'
-}));
+app.use(cors())
 const port = 3001
 
 app.use('/api/diaries', diaryRouter)
