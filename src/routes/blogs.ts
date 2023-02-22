@@ -22,11 +22,18 @@ blogRouter.get('/:id', async (req, res) => {
 })
 
 blogRouter.post('/comment', async (req, res) => {
-  const comment = await blogServices.postCommentBlog(req, res)
 
-  // res.send(comment)
+  try {
+    const comment = await blogServices.postCommentBlog(req, res)
+    res.status(200).json({ message: 'ok' });
+    res.send(comment)
+  } catch (err) {
 
-  return 'saved'
+    res.status(err)
+
+  }
+
+
 })
 
 // blogRouter.patch('/patch', async (req, _) => {
