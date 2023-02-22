@@ -25,7 +25,7 @@ blogRouter.get('/:id', async (req, res) => {
 blogRouter.post('/comment', async (req, res) => {
   const comment = await blogServices.postCommentBlog(req, res)
 
-  return res.send(comment)
+  return comment
 })
 
 

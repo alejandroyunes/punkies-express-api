@@ -31,9 +31,6 @@ export const getComments = async id => {
 }
 
 export const postCommentBlog = async (req, res) => {
-
-  res.send('hit')
-
   const comment = new CommentSchema(req.body)
 
   try {

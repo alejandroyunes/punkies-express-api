@@ -40,7 +40,6 @@ const getComments = (id) => __awaiter(void 0, void 0, void 0, function* () {
 });
 exports.getComments = getComments;
 const postCommentBlog = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
-    res.send('hit');
     const comment = new CommentSchema(req.body);
     try {
         const savedComment = yield comment.save();
