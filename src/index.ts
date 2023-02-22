@@ -15,7 +15,7 @@ mongoose
 
 const app = express()
 app.use(express.json())
-app.use(cors(['https://api-tspw.onrender.com:3001', 'https://punkiesycerebro.com:3001']))
+app.use(cors())
 const port = 3001
 
 app.use('/api/diaries', diaryRouter)

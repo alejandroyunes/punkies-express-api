@@ -22,9 +22,7 @@ blogRouter.get('/:id', async (req, res) => {
 })
 
 blogRouter.post('/comment', async (req, res) => {
-  const comment = await blogServices.postCommentBlog(req, res)
-
-  return comment
+  blogServices.postCommentBlog(req, res)
 })
 
 // blogRouter.patch('/patch', async (req, _) => {

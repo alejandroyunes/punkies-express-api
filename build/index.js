@@ -16,7 +16,7 @@ mongoose_1.default
     .catch(error => console.log(error));
 const app = (0, express_1.default)();
 app.use(express_1.default.json());
-app.use(cors(['https://api-tspw.onrender.com:3001', 'https://punkiesycerebro.com:3001']));
+app.use(cors());
 const port = 3001;
 app.use('/api/diaries', diaries_1.default);
 app.use('/blog', blogs_1.default);
