@@ -32,12 +32,14 @@ export const getComments = async id => {
 
 export const postCommentBlog = async (req, res) => {
 
+  res.send('hit')
+
   const comment = new CommentSchema(req.body)
 
   try {
-    const savedComent = await comment.save()
+    const savedComment = await comment.save()
     res.status(200).json({ message: 'ok' });
-    return savedComent
+    return savedComment
   } catch (err) {
     res.status(err)
   }

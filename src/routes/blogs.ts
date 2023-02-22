@@ -24,7 +24,8 @@ blogRouter.get('/:id', async (req, res) => {
 
 blogRouter.post('/comment', async (req, res) => {
   const comment = await blogServices.postCommentBlog(req, res)
-  return comment
+
+  return res.send(comment)
 })
 
 
@@ -34,10 +35,10 @@ blogRouter.post('/comment', async (req, res) => {
 //   return comment
 // })
 
-blogArray.forEach(e => {
-  const blog = new BlogSchema(e)
-  return blog.save()
-})
+// blogArray.forEach(e => {
+//   const blog = new BlogSchema(e)
+//   return blog.save()
+// })
 
 
 // commentArray.forEach(e => {
