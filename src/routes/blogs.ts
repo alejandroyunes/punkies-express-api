@@ -23,6 +23,7 @@ blogRouter.get('/:id', async (req, res) => {
 
 blogRouter.post('/comment', async (req, res) => {
   blogServices.postCommentBlog(req, res)
+  res.end()
 })
 
 // blogRouter.patch('/patch', async (req, _) => {
