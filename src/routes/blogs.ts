@@ -28,12 +28,8 @@ blogRouter.post('/comment', async (req, res) => {
     res.status(200).json({ message: 'ok' });
     res.send(comment)
   } catch (err) {
-
-    res.status(err)
-
+    res.status(err).json({ message: 'error: ', err });
   }
-
-
 })
 
 // blogRouter.patch('/patch', async (req, _) => {

@@ -39,17 +39,14 @@ const getComments = (id) => __awaiter(void 0, void 0, void 0, function* () {
     return comment;
 });
 exports.getComments = getComments;
-const postCommentBlog = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
-    const comment = new CommentSchema(req.body);
+const postCommentBlog = (req, _) => __awaiter(void 0, void 0, void 0, function* () {
     try {
+        const comment = new CommentSchema(req.body);
         const savedComment = yield comment.save();
-        res.status(200).json({ message: 'ok' });
         return savedComment;
     }
     catch (err) {
-        res.status(err);
         return err;
-        // console.log(err)
     }
 });
 exports.postCommentBlog = postCommentBlog;

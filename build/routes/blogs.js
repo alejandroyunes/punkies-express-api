@@ -55,7 +55,7 @@ blogRouter.post('/comment', (req, res) => __awaiter(void 0, void 0, void 0, func
         res.send(comment);
     }
     catch (err) {
-        res.status(err);
+        res.status(err).json({ message: 'error: ', err });
     }
 }));
 // blogRouter.patch('/patch', async (req, _) => {
