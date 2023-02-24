@@ -4,7 +4,6 @@ import express from 'express'
 import mongoose from 'mongoose'
 const cors = require('cors')
 
-import diaryRouter from './routes/diaries'
 import blogRouter from './routes/blogs'
 import categoriesRouter from './routes/categories'
 
@@ -18,7 +17,6 @@ app.use(express.json())
 app.use(cors())
 const port = 3001
 
-app.use('/api/diaries', diaryRouter)
 app.use('/blog', blogRouter)
 app.use('/category', categoriesRouter)
 

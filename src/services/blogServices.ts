@@ -1,5 +1,3 @@
-
-import mongoose from 'mongoose'
 import categorySchema from '../models/categories'
 const CommentSchema = require('../models/comments')
 const BlogSchema = require('../models/blog')
@@ -32,7 +30,6 @@ export const getComments = async id => {
 
 export const postCommentBlog = async (req, res) => {
 
-
   try {
     const comment = new CommentSchema(req.body)
     const savedComment = await comment.save()
@@ -43,23 +40,3 @@ export const postCommentBlog = async (req, res) => {
     res.send(err)
   }
 }
-
-
-// export const blogPatchComment = (req, res) => {
-
-//   console.log(req.body.comment)
-// }
-
-// Room.find({}).sort('-date').exec((err, docs) => { ... });
-// Room.find({}).sort({date: -1}).exec((err, docs) => { ... });
-// Room.find({}).sort({date: 'desc'}).exec((err, docs) => { ... });
-// Room.find({}).sort({date: 'descending'}).exec((err, docs) => { ... });
-// Room.find({}).sort([['date', -1]]).exec((err, docs) => { ... });
-// Room.find({}, null, {sort: '-date'}, (err, docs) => { ... });
-// Room.find({}, null, {sort: {date: -1}}, (err, docs) => { ... });
-// Room.find({}).sort({date: -1}).exec((err, docs) => { ... });
-// Room.find({}).sort({date: 'desc'}).exec((err, docs) => { ... });
-// Room.find({}).sort({date: 'descending'}).exec((err, docs) => { ... });
-// Room.find({}).sort([['date', -1]]).exec((err, docs) => { ... });
-// Room.find({}, null, {sort: '-date'}, (err, docs) => { ... });
-// Room.find({}, null, {sort: {date: -1}}, (err, docs) => { ... });

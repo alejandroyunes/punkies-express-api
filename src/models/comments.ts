@@ -9,6 +9,4 @@ const commentSchema = new Schema({
 })
 
 commentSchema.plugin(mongoosePaginate);
-
-
 module.exports = mongoose.model('Comment', commentSchema)

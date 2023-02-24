@@ -1,12 +1,5 @@
 import express from 'express'
-import categorySchema from '../models/categories'
 import * as blogServices from '../services/blogServices'
-
-const BlogSchema = require('../models/blog')
-import commentArray from '../data/comments.json'
-
-// import blogSchema from '../models/blog'
-import blogArray from '../data/blogs.json'
 
 const blogRouter = express.Router()
 
@@ -31,11 +24,6 @@ blogRouter.post('/comment', async (req, res) => {
   }
 })
 
-// blogRouter.patch('/patch', async (req, _) => {
-//   const comment = await blogServices.blogPatchComment(req, _)
-
-//   return comment
-// })
 
 // blogArray.forEach(e => {
 //   const blog = new BlogSchema(e)
