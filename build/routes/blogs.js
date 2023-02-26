@@ -37,14 +37,13 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 const blogServices = __importStar(require("../services/blogServices"));
-const BlogSchema = require('../models/blog');
 const blogRouter = express_1.default.Router();
 blogRouter.get('/brief', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     const blog = yield blogServices.getBlogsBrief(req);
     res.send(blog);
 }));
 blogRouter.get('/:id', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
-    const blog = yield blogServices.getBlogsOrBlogsByCategory(req.params.id);
+    const blog = yield blogServices.getBlogsOrBlogsByCategory(req);
     const comment = yield blogServices.getComments(req.params.id);
     res.send({ blog, comment });
 }));
@@ -57,10 +56,6 @@ blogRouter.post('/comment', (req, res) => __awaiter(void 0, void 0, void 0, func
         return err;
     }
 }));
-// blogRouter.patch('/patch', async (req, _) => {
-//   const comment = await blogServices.blogPatchComment(req, _)
-//   return comment
-// })
 // blogArray.forEach(e => {
 //   const blog = new BlogSchema(e)
 //   return blog.save()

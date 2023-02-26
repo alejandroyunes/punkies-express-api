@@ -23,13 +23,25 @@ const getBlogsBrief = (req) => {
     return result;
 };
 exports.getBlogsBrief = getBlogsBrief;
-const getBlogsOrBlogsByCategory = (id) => __awaiter(void 0, void 0, void 0, function* () {
-    const blogsByCategory = yield categories_1.default.findById(id).exec();
+// export const getBlogsOrBlogsByCategory = async id => {
+//   const blogsByCategory = await categorySchema.findById(id).exec()
+//   if (blogsByCategory) {
+//     const blogs = await BlogSchema.find({ category: id }).populate('category').sort({ date: 'desc' }).limit(10).exec()
+//     return blogs
+//   }
+//   const blog = await BlogSchema.findById(id)
+//   return blog
+// }
+const getBlogsOrBlogsByCategory = (req) => __awaiter(void 0, void 0, void 0, function* () {
+    const blogsByCategory = yield categories_1.default.findById(req.params.id).exec();
     if (blogsByCategory) {
-        const blogs = yield BlogSchema.find({ category: id }).populate('category').sort({ date: 'desc' }).limit(10).exec();
-        return blogs;
+        const limit = req.query.limit || 10;
+        const page = req.query.page || 1;
+        const id = req.params.id;
+        const categoryBlogs = yield BlogSchema.paginate({ category: id }, { limit: limit, page: page, populate: 'category', sort: { date: -1 } });
+        return categoryBlogs;
     }
-    const blog = yield BlogSchema.findById(id);
+    const blog = yield BlogSchema.findById(req.params.id);
     return blog;
 });
 exports.getBlogsOrBlogsByCategory = getBlogsOrBlogsByCategory;
@@ -51,19 +63,3 @@ const postCommentBlog = (req, res) => __awaiter(void 0, void 0, void 0, function
     }
 });
 exports.postCommentBlog = postCommentBlog;
-// export const blogPatchComment = (req, res) => {
-//   console.log(req.body.comment)
-// }
-// Room.find({}).sort('-date').exec((err, docs) => { ... });
-// Room.find({}).sort({date: -1}).exec((err, docs) => { ... });
-// Room.find({}).sort({date: 'desc'}).exec((err, docs) => { ... });
-// Room.find({}).sort({date: 'descending'}).exec((err, docs) => { ... });
-// Room.find({}).sort([['date', -1]]).exec((err, docs) => { ... });
-// Room.find({}, null, {sort: '-date'}, (err, docs) => { ... });
-// Room.find({}, null, {sort: {date: -1}}, (err, docs) => { ... });
-// Room.find({}).sort({date: -1}).exec((err, docs) => { ... });
-// Room.find({}).sort({date: 'desc'}).exec((err, docs) => { ... });
-// Room.find({}).sort({date: 'descending'}).exec((err, docs) => { ... });
-// Room.find({}).sort([['date', -1]]).exec((err, docs) => { ... });
-// Room.find({}, null, {sort: '-date'}, (err, docs) => { ... });
-// Room.find({}, null, {sort: {date: -1}}, (err, docs) => { ... });

@@ -7,7 +7,6 @@ require('dotenv').config();
 const express_1 = __importDefault(require("express"));
 const mongoose_1 = __importDefault(require("mongoose"));
 const cors = require('cors');
-const diaries_1 = __importDefault(require("./routes/diaries"));
 const blogs_1 = __importDefault(require("./routes/blogs"));
 const categories_1 = __importDefault(require("./routes/categories"));
 mongoose_1.default
@@ -18,7 +17,6 @@ const app = (0, express_1.default)();
 app.use(express_1.default.json());
 app.use(cors());
 const port = 3001;
-app.use('/api/diaries', diaries_1.default);
 app.use('/blog', blogs_1.default);
 app.use('/category', categories_1.default);
 mongoose_1.default.set('strictQuery', false);

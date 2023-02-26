@@ -9,7 +9,7 @@ blogRouter.get('/brief', async (req, res) => {
 })
 
 blogRouter.get('/:id', async (req, res) => {
-  const blog = await blogServices.getBlogsOrBlogsByCategory(req.params.id)
+  const blog = await blogServices.getBlogsOrBlogsByCategory(req)
   const comment = await blogServices.getComments(req.params.id)
   res.send({ blog, comment })
 })

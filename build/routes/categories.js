@@ -13,7 +13,6 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
-// import * as categoryServices from '../services/categoryServices'
 const categories_1 = __importDefault(require("../models/categories"));
 // import jsonfile from '../data/categories.json'
 const categoryRouter = express_1.default.Router();
@@ -21,20 +20,9 @@ categoryRouter.get('/', (_, res) => __awaiter(void 0, void 0, void 0, function* 
     const categories = yield categories_1.default.find();
     res.send(categories);
 }));
-categoryRouter.get('/blog/:id', (_, res) => __awaiter(void 0, void 0, void 0, function* () {
-    // const blog = await blogSchema.findById(req.params.id).populate('category')
-    res.send('blog');
-}));
 // jsonfile.forEach(e => new categorySchema(e).save())
 // router.get('/:category', async (req, res) => {
 //   const category = await categoryServices.getBlogsByCategory(req.params.category)
 //   return res.send(category)
 // })
-// const newEntry = new categorySchema(
-//   {
-//     "category": "Koanes todo el día",
-//     "categoryTitle": "Documentos públicos para que cualquiera pueda acceder a ellos."
-//   },
-// )
-// newEntry.save().then(() => console.log('data added'))
 exports.default = categoryRouter;

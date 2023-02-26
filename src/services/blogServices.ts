@@ -10,14 +10,34 @@ export const getBlogsBrief = (req) => {
   return result
 }
 
-export const getBlogsOrBlogsByCategory = async id => {
-  const blogsByCategory = await categorySchema.findById(id).exec()
+// export const getBlogsOrBlogsByCategory = async id => {
+//   const blogsByCategory = await categorySchema.findById(id).exec()
+
+//   if (blogsByCategory) {
+//     const blogs = await BlogSchema.find({ category: id }).populate('category').sort({ date: 'desc' }).limit(10).exec()
+//     return blogs
+//   }
+//   const blog = await BlogSchema.findById(id)
+//   return blog
+// }
+
+
+export const getBlogsOrBlogsByCategory = async (req) => {
+
+  const blogsByCategory = await categorySchema.findById(req.params.id).exec()
 
   if (blogsByCategory) {
-    const blogs = await BlogSchema.find({ category: id }).populate('category').sort({ date: 'desc' }).limit(10).exec()
-    return blogs
+
+    const limit = req.query.limit || 10
+    const page = req.query.page || 1
+    const id = req.params.id
+
+    const categoryBlogs = await BlogSchema.paginate({ category: id }, { limit: limit, page: page, populate: 'category', sort: { date: -1 } })
+    return categoryBlogs
   }
-  const blog = await BlogSchema.findById(id)
+
+
+  const blog = await BlogSchema.findById(req.params.id)
   return blog
 }
 
