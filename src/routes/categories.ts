@@ -17,6 +17,4 @@ categoryRouter.get('/', async (_, res) => {
 //   return res.send(category)
 // })
 
-
-
 export default categoryRouter

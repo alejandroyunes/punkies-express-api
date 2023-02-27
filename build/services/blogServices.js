@@ -23,19 +23,10 @@ const getBlogsBrief = (req) => {
     return result;
 };
 exports.getBlogsBrief = getBlogsBrief;
-// export const getBlogsOrBlogsByCategory = async id => {
-//   const blogsByCategory = await categorySchema.findById(id).exec()
-//   if (blogsByCategory) {
-//     const blogs = await BlogSchema.find({ category: id }).populate('category').sort({ date: 'desc' }).limit(10).exec()
-//     return blogs
-//   }
-//   const blog = await BlogSchema.findById(id)
-//   return blog
-// }
 const getBlogsOrBlogsByCategory = (req) => __awaiter(void 0, void 0, void 0, function* () {
     const blogsByCategory = yield categories_1.default.findById(req.params.id).exec();
     if (blogsByCategory) {
-        const limit = req.query.limit || 10;
+        const limit = req.query.limit || 2;
         const page = req.query.page || 1;
         const id = req.params.id;
         const categoryBlogs = yield BlogSchema.paginate({ category: id }, { limit: limit, page: page, populate: 'category', sort: { date: -1 } });
@@ -47,7 +38,6 @@ const getBlogsOrBlogsByCategory = (req) => __awaiter(void 0, void 0, void 0, fun
 exports.getBlogsOrBlogsByCategory = getBlogsOrBlogsByCategory;
 const getComments = (id) => __awaiter(void 0, void 0, void 0, function* () {
     const comment = yield CommentSchema.find({ blogId: id }).populate('comment').exec();
-    // const comment = await CommentSchema.paginate({}, { limit: 10, page: 1, populate: 'blogId', sort: { date: -1 } })
     return comment;
 });
 exports.getComments = getComments;
