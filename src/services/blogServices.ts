@@ -44,3 +44,16 @@ export const postCommentBlog = async (req, res) => {
     res.send(err)
   }
 }
+
+export const postBlog = async (req, res) => {
+
+  try {
+    const newBlog = new BlogSchema(req.body)
+    const savedComment = await newBlog.save()
+
+    res.status(200).json({ message: 'ok' });
+    res.send(savedComment)
+  } catch (err) {
+    res.send(err)
+  }
+}

@@ -12,7 +12,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.postCommentBlog = exports.getComments = exports.getBlogsOrBlogsByCategory = exports.getBlogsBrief = void 0;
+exports.postBlog = exports.postCommentBlog = exports.getComments = exports.getBlogsOrBlogsByCategory = exports.getBlogsBrief = void 0;
 const categories_1 = __importDefault(require("../models/categories"));
 const CommentSchema = require('../models/comments');
 const BlogSchema = require('../models/blog');
@@ -53,3 +53,15 @@ const postCommentBlog = (req, res) => __awaiter(void 0, void 0, void 0, function
     }
 });
 exports.postCommentBlog = postCommentBlog;
+const postBlog = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+    try {
+        const newBlog = new BlogSchema(req.body);
+        const savedComment = yield newBlog.save();
+        res.status(200).json({ message: 'ok' });
+        res.send(savedComment);
+    }
+    catch (err) {
+        res.send(err);
+    }
+});
+exports.postBlog = postBlog;

@@ -24,6 +24,16 @@ blogRouter.post('/comment', async (req, res) => {
   }
 })
 
+blogRouter.post('/newBlog', async (req, res) => {
+
+  try {
+    const comment = await blogServices.postBlog(req, res)
+    return comment
+  } catch (err) {
+    return err
+  }
+})
+
 
 // blogArray.forEach(e => {
 //   const blog = new BlogSchema(e)

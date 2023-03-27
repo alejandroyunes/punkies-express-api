@@ -56,6 +56,15 @@ blogRouter.post('/comment', (req, res) => __awaiter(void 0, void 0, void 0, func
         return err;
     }
 }));
+blogRouter.post('/newBlog', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+    try {
+        const comment = yield blogServices.postBlog(req, res);
+        return comment;
+    }
+    catch (err) {
+        return err;
+    }
+}));
 // blogArray.forEach(e => {
 //   const blog = new BlogSchema(e)
 //   return blog.save()
