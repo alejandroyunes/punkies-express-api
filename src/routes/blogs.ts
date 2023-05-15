@@ -1,9 +1,9 @@
-import express from 'express'
+import express, { Request, Response } from 'express'
 import * as blogServices from '../services/blogServices'
 
 const blogRouter = express.Router()
 
-blogRouter.get('/brief', async (req, res) => {
+blogRouter.get('/brief', async (req: Request, res: Response) => {
   const blog = await blogServices.getBlogsBrief(req)
   res.send(blog)
 })
@@ -39,7 +39,6 @@ blogRouter.post('/newBlog', async (req, res) => {
 //   const blog = new BlogSchema(e)
 //   return blog.save()
 // })
-
 
 // commentArray.forEach(e => {
 //   const blog = new CommentSchema(e)

@@ -13,6 +13,5 @@ const blogSchema = new Schema({
 })
 
 blogSchema.plugin(mongoosePaginate);
-
 module.exports = mongoose.model('Blog', blogSchema)
 

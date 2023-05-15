@@ -1,3 +1,4 @@
+"use strict";
 const array = [
     {
         "slug": "porque-olvidamos-y-cuando-sabemos-que-olvidamos",

@@ -19,7 +19,12 @@ const BlogSchema = require('../models/blog');
 const getBlogsBrief = (req) => {
     const limit = req.query.limit || 10;
     const page = req.query.page || 1;
-    const result = BlogSchema.paginate({}, { limit: limit, page: page, populate: 'category', sort: { date: -1 } });
+    const result = BlogSchema.paginate({}, {
+        limit: limit,
+        page: page,
+        populate: 'category',
+        sort: { date: -1 }
+    });
     return result;
 };
 exports.getBlogsBrief = getBlogsBrief;
@@ -29,7 +34,14 @@ const getBlogsOrBlogsByCategory = (req) => __awaiter(void 0, void 0, void 0, fun
         const limit = req.query.limit || 2;
         const page = req.query.page || 1;
         const id = req.params.id;
-        const categoryBlogs = yield BlogSchema.paginate({ category: id }, { limit: limit, page: page, populate: 'category', sort: { date: -1 } });
+        const categoryBlogs = yield BlogSchema.paginate({
+            category: id
+        }, {
+            limit: limit,
+            page: page,
+            populate: 'category',
+            sort: { date: -1 }
+        });
         return categoryBlogs;
     }
     const blog = yield BlogSchema.findById(req.params.id);

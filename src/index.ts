@@ -7,10 +7,16 @@ const cors = require('cors')
 import blogRouter from './routes/blogs'
 import categoriesRouter from './routes/categories'
 
-mongoose
-  .connect(`${process.env.MONGO_DB}`)
-  .then(() => console.log('connected to the server'))
-  .catch(error => console.log(error))
+const connectToMongoose = async () => {
+  try {
+    await mongoose.connect(`${process.env.MONGO_DB}`)
+    console.log('connected to the server')
+  } catch (error) {
+    console.log(error)
+  }
+}
+
+connectToMongoose()
 
 const app = express()
 app.use(express.json())
@@ -20,8 +26,8 @@ const port = 3001
 app.use('/blog', blogRouter)
 app.use('/category', categoriesRouter)
 
-mongoose.set('strictQuery', false)
-mongoose.set('strictPopulate', false)
+mongoose.set('strictQuery', true)
+mongoose.set('strictPopulate', true)
 
 app.listen(port, () => {
   console.log(`Server Running`)
